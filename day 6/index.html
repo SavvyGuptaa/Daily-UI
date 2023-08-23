@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    .profile-card {
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      width: 300px;
+      text-align: center;
+    }
+
+    .profile-image {
+      width: 100%;
+      height: 200px;
+      background-color: #3498db;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .profile-image img {
+      max-width: 80%;
+      max-height: 80%;
+      border-radius: 50%;
+    }
+
+    .profile-info {
+      padding: 20px;
+    }
+
+    .profile-name {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    .profile-description {
+      font-size: 1rem;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .profile-contact {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .profile-contact a {
+      color: #3498db;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="profile-card">
+    <div class="profile-image">
+      <img src="savvy.png" alt="User Profile Image">
+    </div>
+    <div class="profile-info">
+      <div class="profile-name">Savvy Gupta</div>
+      <div class="profile-description">Web Developer</div>
+      <div class="profile-contact">
+        <a href="savvygupta04@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/savvyguptaa/">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

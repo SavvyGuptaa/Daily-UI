@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flash Message</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    .flash-message {
+      background-color: #fff;
+      border: 2px solid;
+      border-radius: 5px;
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .error-message {
+      border-color: #e74c3c;
+    }
+
+    .success-message {
+      border-color: #2ecc71;
+    }
+
+    .message-icon {
+      font-size: 24px;
+      margin-right: 10px;
+    }
+
+    .message-text {
+      font-size: 16px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="flash-message error-message">
+    <div class="message-icon">&#9888;</div>
+    <div class="message-text">Error: Invalid email address. Please try again.</div>
+  </div>
+
+  <div class="flash-message success-message" style="margin-top: 20px;">
+    <div class="message-icon">&#10004;</div>
+    <div class="message-text">Success! You have successfully signed up.</div>
+  </div>
+</body>
+</html>

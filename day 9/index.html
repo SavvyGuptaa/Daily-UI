@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f0f0f0;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+      }
+
+      .player-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .album-cover {
+      width: 300px;
+      height: 300px;
+      background-color: #ddd;
+      background-size: cover;
+      background-position: center;
+      margin-bottom: 20px;
+    }
+
+    .track-info {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+    .controls {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .control-button {
+      background-color: #3498db;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 1rem;
+      margin: 0 10px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .control-button:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+  <div class="player-container">
+    <div class="album-cover" style="background-image: url('mots7.jpg');"></div>
+    <p class="track-info">BTS - Black Swan</p>
+    <div class="controls">
+      <button class="control-button" id="playPauseButton">Play</button>
+    </div>
+  </div>
+
+  <script>
+    const audio = new Audio('song.mp3');
+    const playPauseButton = document.getElementById('playPauseButton');
+    let isPlaying = false;
+
+    playPauseButton.addEventListener('click', () => {
+      if (isPlaying) {
+        audio.pause();
+        playPauseButton.textContent = 'Play';
+      } else {
+        audio.play();
+        playPauseButton.textContent = 'Pause';
+      }
+      isPlaying = !isPlaying;
+    });
+  </script>
+</body>
+</html>
